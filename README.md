@@ -13,20 +13,25 @@ First of all we should create a Google Cloud Stroage to upload and store the dat
 
 Our data is now in Google Cloud Stroage, in the next steps we will pull the data from here to BigQuery and Vertex Ai's notebook.
 
-## STEP 2: Pull the data from Bucket to BigQuery
+## STEP 2: Load the data from Bucket to BigQuery
 
-In this step we pull the data from Bucket to BigQuery. We can now use SQL commands to prepare the data for CLTV calculation if we want but I will prepare the data on Vertex Ai Workbench.
+In this step we pull the data from Bucket to BigQuery. We'll load the data into BigQuery because we'll be pulling data from BigQuery instead of Bucket when we work on the Workbench notebook.
 
 ![Ekran görüntüsü 2023-11-25 194606](https://github.com/enesbesinci/cltv-prediction/assets/110482608/daadaed1-6c24-44d9-bf80-bebb622bbcfd)
 
-## STEP 3: A summary of the dataset and the creation of a Vertex AI Workbench notebook
+We loaded the data into BigQuery from Bucket. Now we can use SQL commands to prepare the data for CLTV calculation if we want but I will prepare the data on Vertex Ai Workbench.
 
-In this step we will take a look at the dataset and calculate the CLTV using BG-NBD and Gamma-Gamma Submodel on Workbench.
+## STEP 3: Dataset Exploration, Preprocessing, and CLTV Calculation with BG-NBD and Gamma-Gamma Submodel on the Vertex AI Workbench
+
+In this step, we will take a look at the dataset and complete the data preprocessing steps and then calculate the CLTV using BG-NBD and Gamma-Gamma Submodel on the workbench.
+
 ### !!! This is a real-world dataset from FLO, a Turkish shoe retailer.
+
+#### A Summary of The Dataset:
 
 We have some features that contain information about the customer, here are all of them:
 
-**************************************************************************************************************************************
+#### **************************************************************************************************************************************
 
 ##### master_id: Unique customer identifier
 ##### order_channel: The channel used for the shopping transaction, belonging to the platform (Android, iOS, Desktop, Mobile, Offline)
@@ -41,5 +46,11 @@ We have some features that contain information about the customer, here are all 
 ##### customer_value_total_ever_online: The total amount paid by the customer in online transactions
 ##### interested_in_categories_12: The list of categories in which the customer has made purchases in the last 12 months
 
-**************************************************************************************************************************************
+#### **************************************************************************************************************************************
+
+Now we can move on to data preprocessing and EDA.
+
+
+
+
 
