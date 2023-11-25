@@ -1,6 +1,6 @@
 # Customer Life Time Value Prediction
 
-Hello everyone, in this project we are goint to calculate customer life time value (also knowns as CLTV or CLV) using GCP technologies like Google Cloud Storage, BigQuery and Vertex AI.
+Hello everyone, in this project we are going to calculate customer life time value (also knowns as CLTV or CLV) using GCP technologies like Google Cloud Storage, BigQuery and Vertex AI.
 
 Customer lifetime value (CLV or CLTV) is a metric that measures the total revenue a customer is expected to generate for the business over the course of their relationship with the company. It is an important metric for businesses to understand as it can help them make better decisions about marketing, customer retention and product development.
 
@@ -31,7 +31,7 @@ In this step, we will take a look at the dataset and complete the data preproces
 
 We have some features that contain information about the customer, here are all of them:
 
-#### **************************************************************************************************************************************
+#### **************************************************************************************************************************
 
 ##### master_id: Unique customer identifier
 ##### order_channel: The channel used for the shopping transaction, belonging to the platform (Android, iOS, Desktop, Mobile, Offline)
@@ -46,7 +46,7 @@ We have some features that contain information about the customer, here are all 
 ##### customer_value_total_ever_online: The total amount paid by the customer in online transactions
 ##### interested_in_categories_12: The list of categories in which the customer has made purchases in the last 12 months
 
-#### **************************************************************************************************************************************
+#### **************************************************************************************************************************
 
 Now we can move on to data preprocessing and EDA.
 
