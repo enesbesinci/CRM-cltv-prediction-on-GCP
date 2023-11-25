@@ -21,13 +21,15 @@ In this step we pull the data from Bucket to BigQuery. We'll load the data into 
 
 We loaded the data into BigQuery from Bucket. Now we can use SQL commands to prepare the data for CLTV calculation if we want but I will prepare the data on Vertex Ai Workbench.
 
-## STEP 3: Dataset Exploration, Preprocessing, and CLTV Calculation with BG-NBD and Gamma-Gamma Submodel on the Vertex AI Workbench
+## STEP 3: Preprocessing, Dataset Exploration and CLTV Calculation with BG-NBD and Gamma-Gamma Submodel on the Vertex AI Workbench
 
 In this step, we will take a look at the dataset and complete the data preprocessing steps and then calculate the CLTV using BG-NBD and Gamma-Gamma Submodel on the workbench.
 
 ### !!! This is a real-world dataset from FLO, a Turkish shoe retailer.
 
 #### A Summary of The Dataset:
+
+The data set consists of information obtained from the past shopping behavior of customers who made their last purchases as OmniChannel (both online and offline shoppers) in 2020 - 2021.
 
 We have some features that contain information about the customer, here are all of them:
 
