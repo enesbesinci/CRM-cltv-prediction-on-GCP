@@ -31,7 +31,7 @@ In this step, we will take a look at the dataset and complete the data preproces
 
 We have some features that contain information about the customer, here are all of them:
 
-#### **************************************************************************************************************************
+#### ***********************************************************************************************************************
 
 ##### master_id: Unique customer identifier
 ##### order_channel: The channel used for the shopping transaction, belonging to the platform (Android, iOS, Desktop, Mobile, Offline)
@@ -46,7 +46,7 @@ We have some features that contain information about the customer, here are all 
 ##### customer_value_total_ever_online: The total amount paid by the customer in online transactions
 ##### interested_in_categories_12: The list of categories in which the customer has made purchases in the last 12 months
 
-#### **************************************************************************************************************************
+#### ***********************************************************************************************************************
 
 Now we can move on to data preprocessing and EDA.
 
