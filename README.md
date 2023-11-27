@@ -21,7 +21,7 @@ In this step we pull the data from Bucket to BigQuery. We'll load the data into 
 
 We loaded the data into BigQuery from Bucket. Now we can use SQL commands to prepare the data for CLTV calculation if we want but I will prepare the data on Vertex Ai Workbench.
 
-## STEP 3: Preprocessing, Dataset Exploration and CLTV Calculation with BG-NBD and Gamma-Gamma Submodel on the Vertex AI Workbench
+## STEP 3: Data preprocessing, Data Exploration and Calculation of Metrics Needed to Calculate CLTV on Vertex Ai Workbench
 
 In this step, we will take a look at the dataset and complete the data preprocessing steps and then calculate the CLTV using BG-NBD and Gamma-Gamma Submodel on the workbench.
 
@@ -125,6 +125,89 @@ Now that we have seen our outliers, we can either discard these outliers from th
 Let's check if our missing data is gone.
 
 ![Ekran görüntüsü 2023-11-26 230231](https://github.com/enesbesinci/cltv-prediction/assets/110482608/9fab4046-fe5b-4536-909c-dbbf3a9638e9)
+
+Now that we no longer have any missing or outlier data, we can begin to create the metrics needed to calculate CLTV.
+
+## STEP 4: How to Calculate the CLTV Prediction
+
+First of all we create a new more simple dataframe to calculate the metrics to CLTV easily
+
+![Ekran görüntüsü 2023-11-27 125337](https://github.com/enesbesinci/cltv-prediction/assets/110482608/4e463efc-3dd4-4d53-888e-0e4e7c9dd53c)
+
+After that, we set the analysis date as 2 days after the last date in the dataset for this project.
+
+![Ekran görüntüsü 2023-11-27 125456](https://github.com/enesbesinci/cltv-prediction/assets/110482608/53ddaebf-7897-4f74-906c-d0c842e0019c)
+
+And now, we can calculate the Tenure, Recency, Frequency and Monetary values.
+
+![Ekran görüntüsü 2023-11-27 132602](https://github.com/enesbesinci/cltv-prediction/assets/110482608/dbde85e6-b594-4104-952a-5eba394a93e1)
+
+Yes, we have calculated the metrics, let's take a brief look at our dataset.
+
+![Ekran görüntüsü 2023-11-27 132742](https://github.com/enesbesinci/cltv-prediction/assets/110482608/b09c8d62-39c3-4336-b786-0977904c0a7f)
+
+Yes, now that we have our metrics to calculate CLTV, we can now predict customer purchase frequency and purchase amounts with BG-NBD and Gamma-Gamma Submodel.
+
+First of all, let's try to predict the 3 and 6-month purchase frequency of customers with the BG-NGB model.
+
+![Ekran görüntüsü 2023-11-27 133228](https://github.com/enesbesinci/cltv-prediction/assets/110482608/44739f54-e96b-4a3e-9d48-6750f2e19f31)
+
+We then estimate the average purchase amounts of each customer with the Gamma-Gamma Sub Model and after that we can now predict the 6-month CLTV for each customer.
+
+![Ekran görüntüsü 2023-11-27 133252](https://github.com/enesbesinci/cltv-prediction/assets/110482608/1c3e7cf5-f071-4454-9477-fabd9628dee9)
+
+Let's look at the results, it seem consistent
+
+![Ekran görüntüsü 2023-11-27 134416](https://github.com/enesbesinci/cltv-prediction/assets/110482608/89de4b88-e3f6-4ebb-9b1d-e34f65cf2fdd)
+
+Now we need to segment our customers according to their Customer Lifetime Values. In this way, we can differentiate between the different customers we have and perform different sales, advertising and marketing activities for each different segment. In this section, customers can be divided into 3, 4, 5 or more segments. But in this project, I will divide the customers into 4 different segments and I will sort them as A-B-C-D from the highest to the lowest CLTV value.
+
+![Ekran görüntüsü 2023-11-27 134947](https://github.com/enesbesinci/cltv-prediction/assets/110482608/b6a46067-0bf0-4aca-90da-59caad0a0dba)
+
+Let's analyze the differences of each segment.
+
+![Ekran görüntüsü 2023-11-27 140434](https://github.com/enesbesinci/cltv-prediction/assets/110482608/4d7dda5a-7fe9-4390-a212-87a883f5712c)
+
+Yes, we have made our CLTV forecasts, now we can focus on different segments and develop different sales, advertising and marketing activities for each of them. Finally, let's save our customers in segment A, the most valuable ones for us, in a csv file. For customers in this segment we can develop reward programs or different strategies to make sure they keep buying.
+
+![Ekran görüntüsü 2023-11-27 140654](https://github.com/enesbesinci/cltv-prediction/assets/110482608/9c119c8a-ed5f-406c-b197-3efcb193132d)
+
+![Ekran görüntüsü 2023-11-27 141102](https://github.com/enesbesinci/cltv-prediction/assets/110482608/f35678e2-d9b1-486c-893e-2e4182f1f67e)
+
+Then, let's upload our dataset containing all our customers and the segments they belong to back to the bucket we use as file storage.
+
+![Ekran görüntüsü 2023-11-27 145548](https://github.com/enesbesinci/cltv-prediction/assets/110482608/17a52f84-ffa4-4672-be11-d31bc931bc99)
+
+Yes, we have uploaded.
+
+![Ekran görüntüsü 2023-11-27 145617](https://github.com/enesbesinci/cltv-prediction/assets/110482608/ccb47c72-382a-49cd-a80f-cecd9b656f32)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
