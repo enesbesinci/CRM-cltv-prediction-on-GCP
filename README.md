@@ -182,49 +182,24 @@ Yes, we have uploaded.
 
 ![Ekran görüntüsü 2023-11-27 145617](https://github.com/enesbesinci/cltv-prediction/assets/110482608/ccb47c72-382a-49cd-a80f-cecd9b656f32)
 
+Show us the 20 clients who are expected to make the most money in the next six months, using BigQuery as an example.
+
+![Screenshot 2023-11-27 162551](https://github.com/enesbesinci/cltv-prediction-on-GCP/assets/110482608/bcb67755-40fd-49f1-9dc5-048a9f3310eb)
+
+So now that we know our customer segments and what they mean, we are going to create some charts about our customer segments with Google Looker Studio to present the results of these predictions in a more understandable way to our team or others.
 
 
+Graph 1: Expected number of total purchases by customer segments for 3 and 6 months
 
+![Screenshot 2023-11-27 173810](https://github.com/enesbesinci/cltv-prediction-on-GCP/assets/110482608/b1724f86-473f-4d11-8d24-73a11a5a97a5)
 
+As you can see above The 3-month total number of purchases by customers in segment A is almost equal to the 6-month total number of purchases by customers in segment D.
 
+Graph 2: Average expected purchase amount by customer segments
 
+![Screenshot 2023-11-27 173857](https://github.com/enesbesinci/cltv-prediction-on-GCP/assets/110482608/530e6925-cbe8-4115-be2e-9842d860a0f7)
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+As expected, the average purchase amount of customers in segment A is higher than other customer segments.
 
 
 
