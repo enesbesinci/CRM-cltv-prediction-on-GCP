@@ -182,7 +182,7 @@ Yes, we have uploaded.
 
 ![Ekran görüntüsü 2023-11-27 145617](https://github.com/enesbesinci/cltv-prediction/assets/110482608/ccb47c72-382a-49cd-a80f-cecd9b656f32)
 
-Show us the 20 clients who are expected to make the most money in the next six months, using BigQuery as an example.
+As an example, let's show 20 customers belonging to segment A using BigQuery.
 
 ![Screenshot 2023-11-27 162551](https://github.com/enesbesinci/cltv-prediction-on-GCP/assets/110482608/bcb67755-40fd-49f1-9dc5-048a9f3310eb)
 
