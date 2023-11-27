@@ -1,6 +1,6 @@
 # Customer Life Time Value Prediction
 
-Hello everyone, in this project we are going to calculate customer life time value (also knowns as CLTV or CLV) using GCP technologies like Google Cloud Storage, BigQuery and Vertex AI.
+Hello everyone, in this project we are going to calculate customer life time value (also knowns as CLTV or CLV) using GCP technologies like Google Cloud Storage, BigQuery, Vertex AI and Google Looker Studio.
 
 Customer lifetime value (CLV or CLTV) is a metric that measures the total revenue a customer is expected to generate for the business over the course of their relationship with the company. It is an important metric for businesses to understand as it can help them make better decisions about marketing, customer retention and product development.
 
@@ -198,6 +198,10 @@ As you can see above The 3-month total number of purchases by customers in segme
 Graph 2: Average expected purchase amount by customer segments
 
 ![Screenshot 2023-11-27 173857](https://github.com/enesbesinci/cltv-prediction-on-GCP/assets/110482608/530e6925-cbe8-4115-be2e-9842d860a0f7)
+
+Yes, now that we know our different customer segments and the customers included in these segments, we should develop different sales, advertising and marketing strategies for each segment and communicate with different channels.
+
+Thank you for reading.
 
 As expected, the average purchase amount of customers in segment A is higher than other customer segments.
 
