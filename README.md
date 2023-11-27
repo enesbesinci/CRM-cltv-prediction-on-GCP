@@ -199,11 +199,11 @@ Graph 2: Average expected purchase amount by customer segments
 
 ![Screenshot 2023-11-27 173857](https://github.com/enesbesinci/cltv-prediction-on-GCP/assets/110482608/530e6925-cbe8-4115-be2e-9842d860a0f7)
 
+As expected, the average purchase amount of customers in segment A is higher than other customer segments.
+
 Yes, now that we know our different customer segments and the customers included in these segments, we should develop different sales, advertising and marketing strategies for each segment and communicate with different channels.
 
 Thank you for reading.
-
-As expected, the average purchase amount of customers in segment A is higher than other customer segments.
 
 
 
