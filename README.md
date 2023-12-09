@@ -25,7 +25,7 @@ We loaded the data into BigQuery from Bucket. Now we can use SQL commands to pre
 
 In this step, we will take a look at the dataset and complete the data preprocessing steps and then calculate the CLTV using BG-NBD and Gamma-Gamma Submodel on the workbench.
 
-### !!! This is a real-world dataset from FLO, a Turkish shoe retailer.
+### In this example, we'll use the sales data of a shoe retailer. I'll explain the features we'll be using in the project
 
 #### A Summary of The Dataset:
 
